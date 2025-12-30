@@ -1,0 +1,15 @@
+# ===================
+# FICHIERS À IGNORER
+# ===================
+
+# ====================================
+# Ne pas rendre visible nos "secrets"
+.env
+
+# ===============================
+# Notebook test à ne pas montrer
+test.ipynb
+
+# ==========================================
+# Poetry lock pas de nécessité à le montrer
+poetry.lock

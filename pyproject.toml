@@ -1,0 +1,26 @@
+[project]
+name = "deploiement-systeme-rag"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Florian Schorer",email = "schorer.florian@me.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<3.15"
+dependencies = [
+    "pandas (>=2.3.3,<3.0.0)",
+    "numpy (>=2.4.0,<3.0.0)",
+    "matplotlib (>=3.10.8,<4.0.0)",
+    "faiss-cpu (>=1.13.2,<2.0.0)",
+    "langchain (>=1.2.0,<2.0.0)",
+    "ipykernel (>=7.1.0,<8.0.0)",
+    "transformers (>=4.57.3,<5.0.0)",
+    "sentence-transformers (>=5.2.0,<6.0.0)",
+    "langchain-community (>=0.4.1,<0.5.0)",
+    "mistralai (>=1.10.0,<2.0.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
