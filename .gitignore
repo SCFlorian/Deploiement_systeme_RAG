@@ -9,7 +9,17 @@
 # ===============================
 # Notebook test à ne pas montrer
 test.ipynb
+notebook_preprocessing copy.ipynb
+notebook_preprocessing copy 2.ipynb
+
 
 # ==========================================
 # Poetry lock pas de nécessité à le montrer
 poetry.lock
+
+# ===================================================
+# On peut ignorer pour le moment
+__pycache__
+faiss_index
+tests
+.DS_Store
