@@ -23,3 +23,4 @@ __pycache__
 faiss_index
 tests
 .DS_Store
+faiss_index.idx
