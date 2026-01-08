@@ -20,14 +20,14 @@ def build_vectorstore(documents, client):
     )
 
     vectorstore.save_local("faiss_index")
-    return vectorstore
+    return vectorstore, embeddings
 
 # ==================
 # Tests d'une query
 # ==================
 
 def generate_query(vectorstore):
-    query = "évènement dans le 15ème arrondissement"
+    query = "théâtre à paris"
 
     results = vectorstore.similarity_search(query, k=5)
 
