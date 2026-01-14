@@ -24,3 +24,7 @@ faiss_index
 tests
 .DS_Store
 faiss_index.idx
+app copy.py
+notebook/.DS_Store
+faiss_index_long/
+faiss_index_short/

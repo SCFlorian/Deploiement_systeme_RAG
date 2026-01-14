@@ -65,9 +65,9 @@ def col_rename(df_firstclean):
 def short_version(df_short):
     """Préparation d'une colonne pour la version courte"""
     df_short["text_for_embedding"] = (
-        df_short["title"] + "\n" +
-        df_short["description"].fillna("") + "\n" +
-        df_short["conditions"].fillna("") + "\n")
+        "TITRE: " + df_short["title"] + "\n" +
+        "DESCRIPTION: " + df_short["description"].fillna("") + "\n" +
+        "CONDITIONS: " + df_short["conditions"].fillna("") + "\n")
 
     return df_short
 
