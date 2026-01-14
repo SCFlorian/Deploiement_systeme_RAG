@@ -1,0 +1,195 @@
+index,question,k,threshold,doc_id,score,contenu
+faiss_index_short,Une pièce de théâtre,5,0.4,64,0.3493,"TITRE: La France, Empire au Théatre de Belleville
+DESCRIPTION: Cie Un Pas de Côté - Nicolas Lambert
+CONDITIONS: Tarif plein 22 € / Tarif réduit 15 €
+"
+faiss_index_short,Une pièce de théâtre,5,0.4,50,0.3646,"TITRE: UNE MOUETTE | Anton Tchekhov                                                                      Mise en scène par Elsa Granat
+DESCRIPTION: Accessibilité : surtitres français, surtitres anglais, surtitres adaptés, audiodescription et langue des signes française
+CONDITIONS: Prix billet et lun"
+faiss_index_short,Une pièce de théâtre,5,0.4,18,0.3959,"TITRE: Le Roi, la Reine et le Bouffon
+DESCRIPTION: Cie La Grande T - Clémence Coullon
+CONDITIONS: 
+"
+faiss_index_short,Une pièce de théâtre,5,0.4,42,0.3973,"TITRE: La décalcomanie
+DESCRIPTION: ensemble théâtral estrarre / Julien Kosellek
+CONDITIONS: Gratuit pour les experts DRAC sur réservation
+"
+faiss_index_short,Une pièce de théâtre,5,0.4,79,0.3997,"TITRE: Chroniques d'une Exploratrice
+DESCRIPTION: Compagnie A point - GOZLAN Alice
+CONDITIONS: Sur inscription
+"
+faiss_index_short,Une pièce de théâtre,3,0.4,64,0.3493,"TITRE: La France, Empire au Théatre de Belleville
+DESCRIPTION: Cie Un Pas de Côté - Nicolas Lambert
+CONDITIONS: Tarif plein 22 € / Tarif réduit 15 €
+"
+faiss_index_short,Une pièce de théâtre,3,0.4,50,0.3646,"TITRE: UNE MOUETTE | Anton Tchekhov                                                                      Mise en scène par Elsa Granat
+DESCRIPTION: Accessibilité : surtitres français, surtitres anglais, surtitres adaptés, audiodescription et langue des signes française
+CONDITIONS: Prix billet et lun"
+faiss_index_short,Une pièce de théâtre,3,0.4,18,0.3959,"TITRE: Le Roi, la Reine et le Bouffon
+DESCRIPTION: Cie La Grande T - Clémence Coullon
+CONDITIONS: 
+"
+faiss_index_short,Une pièce de théâtre,5,0.6,64,0.3493,"TITRE: La France, Empire au Théatre de Belleville
+DESCRIPTION: Cie Un Pas de Côté - Nicolas Lambert
+CONDITIONS: Tarif plein 22 € / Tarif réduit 15 €
+"
+faiss_index_short,Une pièce de théâtre,5,0.6,50,0.3646,"TITRE: UNE MOUETTE | Anton Tchekhov                                                                      Mise en scène par Elsa Granat
+DESCRIPTION: Accessibilité : surtitres français, surtitres anglais, surtitres adaptés, audiodescription et langue des signes française
+CONDITIONS: Prix billet et lun"
+faiss_index_short,Une pièce de théâtre,5,0.6,18,0.3959,"TITRE: Le Roi, la Reine et le Bouffon
+DESCRIPTION: Cie La Grande T - Clémence Coullon
+CONDITIONS: 
+"
+faiss_index_short,Une pièce de théâtre,5,0.6,42,0.3973,"TITRE: La décalcomanie
+DESCRIPTION: ensemble théâtral estrarre / Julien Kosellek
+CONDITIONS: Gratuit pour les experts DRAC sur réservation
+"
+faiss_index_short,Une pièce de théâtre,5,0.6,79,0.3997,"TITRE: Chroniques d'une Exploratrice
+DESCRIPTION: Compagnie A point - GOZLAN Alice
+CONDITIONS: Sur inscription
+"
+faiss_index_short,Une pièce de théâtre,3,0.6,64,0.3493,"TITRE: La France, Empire au Théatre de Belleville
+DESCRIPTION: Cie Un Pas de Côté - Nicolas Lambert
+CONDITIONS: Tarif plein 22 € / Tarif réduit 15 €
+"
+faiss_index_short,Une pièce de théâtre,3,0.6,50,0.3646,"TITRE: UNE MOUETTE | Anton Tchekhov                                                                      Mise en scène par Elsa Granat
+DESCRIPTION: Accessibilité : surtitres français, surtitres anglais, surtitres adaptés, audiodescription et langue des signes française
+CONDITIONS: Prix billet et lun"
+faiss_index_short,Une pièce de théâtre,3,0.6,18,0.3959,"TITRE: Le Roi, la Reine et le Bouffon
+DESCRIPTION: Cie La Grande T - Clémence Coullon
+CONDITIONS: 
+"
+faiss_index_long,Une pièce de théâtre,5,0.4,6,0.3387,"Il s’agit d’une forme de création volontairement courte, rapide, incomplète, construite en quelques heures, en tentant d’utiliser au maximum les récits du jour. Pour dire, entre autres choses, que les théâtres peuvent accueillir ça aussi, la possibilité de venir parler, se faire écrire quelque chose"
+faiss_index_long,Une pièce de théâtre,5,0.4,50,0.3502,"130 ans ont passé et la pièce, certainement la plus jouée de l’auteur, est sans cesse reprise, traduite, adaptée. C’est dans la tradition d’une réappropriation permanente des grands textes que se situe Elsa Granat, abordant les «classiques » en s’intéressant à leur capacité à toucher un public conte"
+faiss_index_long,Une pièce de théâtre,5,0.4,56,0.3528,"Un tel décor au croisement des siècles est idéal pour cette œuvre oubliée, objet d’une cabale contre son auteur qui cherchait à se démarquer de la comédie italienne au profit d’une théâtralité acquise à plus de naturel. À la fois pièce de caractère et chorale, elle dépeint le quotidien de danseurs e"
+faiss_index_long,Une pièce de théâtre,5,0.4,57,0.3574,"« J’appartiens à un théâtre de répertoire et je me dis que si l’on ne pose pas un regard neuf sur les œuvres, alors ce théâtre de répertoire n’a plus lieu d’être », dit Clément Hervieu-Léger, nouvel administrateur général de la Comédie-Française. Créé en 2014, avec 197 représentations à la date de c"
+faiss_index_long,Une pièce de théâtre,5,0.4,79,0.3585,"Avec ce spectacle la compagnie A. poursuit sa réflexion sur les ""grands récits"" qui orientent nos sociétés et nos imaginaires, sur une scène pensée comme un laboratoire. En interrogeant le réel tel qu’il se dessine en ligne et en dévoilant les stratégies de l’extrême-droite pour imposer ses idées le"
+faiss_index_long,Une pièce de théâtre,3,0.4,6,0.3387,"Il s’agit d’une forme de création volontairement courte, rapide, incomplète, construite en quelques heures, en tentant d’utiliser au maximum les récits du jour. Pour dire, entre autres choses, que les théâtres peuvent accueillir ça aussi, la possibilité de venir parler, se faire écrire quelque chose"
+faiss_index_long,Une pièce de théâtre,3,0.4,50,0.3502,"130 ans ont passé et la pièce, certainement la plus jouée de l’auteur, est sans cesse reprise, traduite, adaptée. C’est dans la tradition d’une réappropriation permanente des grands textes que se situe Elsa Granat, abordant les «classiques » en s’intéressant à leur capacité à toucher un public conte"
+faiss_index_long,Une pièce de théâtre,3,0.4,56,0.3528,"Un tel décor au croisement des siècles est idéal pour cette œuvre oubliée, objet d’une cabale contre son auteur qui cherchait à se démarquer de la comédie italienne au profit d’une théâtralité acquise à plus de naturel. À la fois pièce de caractère et chorale, elle dépeint le quotidien de danseurs e"
+faiss_index_long,Une pièce de théâtre,5,0.6,6,0.3387,"Il s’agit d’une forme de création volontairement courte, rapide, incomplète, construite en quelques heures, en tentant d’utiliser au maximum les récits du jour. Pour dire, entre autres choses, que les théâtres peuvent accueillir ça aussi, la possibilité de venir parler, se faire écrire quelque chose"
+faiss_index_long,Une pièce de théâtre,5,0.6,50,0.3502,"130 ans ont passé et la pièce, certainement la plus jouée de l’auteur, est sans cesse reprise, traduite, adaptée. C’est dans la tradition d’une réappropriation permanente des grands textes que se situe Elsa Granat, abordant les «classiques » en s’intéressant à leur capacité à toucher un public conte"
+faiss_index_long,Une pièce de théâtre,5,0.6,56,0.3528,"Un tel décor au croisement des siècles est idéal pour cette œuvre oubliée, objet d’une cabale contre son auteur qui cherchait à se démarquer de la comédie italienne au profit d’une théâtralité acquise à plus de naturel. À la fois pièce de caractère et chorale, elle dépeint le quotidien de danseurs e"
+faiss_index_long,Une pièce de théâtre,5,0.6,57,0.3574,"« J’appartiens à un théâtre de répertoire et je me dis que si l’on ne pose pas un regard neuf sur les œuvres, alors ce théâtre de répertoire n’a plus lieu d’être », dit Clément Hervieu-Léger, nouvel administrateur général de la Comédie-Française. Créé en 2014, avec 197 représentations à la date de c"
+faiss_index_long,Une pièce de théâtre,5,0.6,79,0.3585,"Avec ce spectacle la compagnie A. poursuit sa réflexion sur les ""grands récits"" qui orientent nos sociétés et nos imaginaires, sur une scène pensée comme un laboratoire. En interrogeant le réel tel qu’il se dessine en ligne et en dévoilant les stratégies de l’extrême-droite pour imposer ses idées le"
+faiss_index_long,Une pièce de théâtre,3,0.6,6,0.3387,"Il s’agit d’une forme de création volontairement courte, rapide, incomplète, construite en quelques heures, en tentant d’utiliser au maximum les récits du jour. Pour dire, entre autres choses, que les théâtres peuvent accueillir ça aussi, la possibilité de venir parler, se faire écrire quelque chose"
+faiss_index_long,Une pièce de théâtre,3,0.6,50,0.3502,"130 ans ont passé et la pièce, certainement la plus jouée de l’auteur, est sans cesse reprise, traduite, adaptée. C’est dans la tradition d’une réappropriation permanente des grands textes que se situe Elsa Granat, abordant les «classiques » en s’intéressant à leur capacité à toucher un public conte"
+faiss_index_long,Une pièce de théâtre,3,0.6,56,0.3528,"Un tel décor au croisement des siècles est idéal pour cette œuvre oubliée, objet d’une cabale contre son auteur qui cherchait à se démarquer de la comédie italienne au profit d’une théâtralité acquise à plus de naturel. À la fois pièce de caractère et chorale, elle dépeint le quotidien de danseurs e"
+faiss_index_short,J'aimerais visiter un musée,5,0.6,61,0.4585,"TITRE: Les expositions
+DESCRIPTION: Lieu d'exploration, de découverte et de culture, les expositions sont le coeur de la Cité. Sur 30 000 m2, elles présentent le développement des sciences et des techniques ......
+CONDITIONS: Groupes information et réservation : 01 40 05 12 12 de 9h30 à 17h30, du lu"
+faiss_index_short,J'aimerais visiter un musée,5,0.6,38,0.4629,"TITRE: Journée Portes Ouvertes
+DESCRIPTION: Journée Portes Ouvertes
+CONDITIONS: 
+"
+faiss_index_short,J'aimerais visiter un musée,5,0.6,30,0.4757,"TITRE: Journée Portes Ouvertes dédiées aux métiers du tourisme et de l'hôtellerie
+DESCRIPTION: Vous avez des questions sur l’apprentissage ? Vous avez besoin d’information sur nos formations tourisme et hôtellerie ? Vous vous demandez comment trouver une entreprise en alternance ?
+CONDITIONS: 
+"
+faiss_index_short,J'aimerais visiter un musée,5,0.6,9,0.4789,"TITRE: Tour de contes à la Grande Mosquée de Paris
+DESCRIPTION: La Cour des Contes
+CONDITIONS: réservation sur hello asso de la compagnie
+"
+faiss_index_short,J'aimerais visiter un musée,5,0.6,40,0.4789,"TITRE: Tour de contes à la Grande Mosquée de Paris
+DESCRIPTION: La Cour des Contes
+CONDITIONS: réservation sur hello asso de la compagnie
+"
+faiss_index_short,J'aimerais visiter un musée,3,0.6,61,0.4585,"TITRE: Les expositions
+DESCRIPTION: Lieu d'exploration, de découverte et de culture, les expositions sont le coeur de la Cité. Sur 30 000 m2, elles présentent le développement des sciences et des techniques ......
+CONDITIONS: Groupes information et réservation : 01 40 05 12 12 de 9h30 à 17h30, du lu"
+faiss_index_short,J'aimerais visiter un musée,3,0.6,38,0.4629,"TITRE: Journée Portes Ouvertes
+DESCRIPTION: Journée Portes Ouvertes
+CONDITIONS: 
+"
+faiss_index_short,J'aimerais visiter un musée,3,0.6,30,0.4757,"TITRE: Journée Portes Ouvertes dédiées aux métiers du tourisme et de l'hôtellerie
+DESCRIPTION: Vous avez des questions sur l’apprentissage ? Vous avez besoin d’information sur nos formations tourisme et hôtellerie ? Vous vous demandez comment trouver une entreprise en alternance ?
+CONDITIONS: 
+"
+faiss_index_short,J'aimerais visiter un musée,3,0.7,61,0.4585,"TITRE: Les expositions
+DESCRIPTION: Lieu d'exploration, de découverte et de culture, les expositions sont le coeur de la Cité. Sur 30 000 m2, elles présentent le développement des sciences et des techniques ......
+CONDITIONS: Groupes information et réservation : 01 40 05 12 12 de 9h30 à 17h30, du lu"
+faiss_index_short,J'aimerais visiter un musée,3,0.7,38,0.4629,"TITRE: Journée Portes Ouvertes
+DESCRIPTION: Journée Portes Ouvertes
+CONDITIONS: 
+"
+faiss_index_short,J'aimerais visiter un musée,3,0.7,30,0.4757,"TITRE: Journée Portes Ouvertes dédiées aux métiers du tourisme et de l'hôtellerie
+DESCRIPTION: Vous avez des questions sur l’apprentissage ? Vous avez besoin d’information sur nos formations tourisme et hôtellerie ? Vous vous demandez comment trouver une entreprise en alternance ?
+CONDITIONS: 
+"
+faiss_index_short,Un festival en été,3,0.7,55,0.4068,"TITRE: Festival du Merveilleux
+DESCRIPTION: Vivre le patrimoine
+CONDITIONS: 22 € - Adultes
+18 € - Jeunes (de 12 à 18 ans, étudiants – de 25 ans)
+14 € - Réduit (personnes en situation de handicap, accompagnant de personnes en situation de handicap) et enfants de 3 à 11 ans
+"
+faiss_index_short,Un festival en été,3,0.7,81,0.4376,"TITRE: SOLA
+DESCRIPTION: dans le cadre du Festival Culture Bar-Bars
+CONDITIONS: 
+"
+faiss_index_short,Un festival en été,3,0.7,86,0.4393,"TITRE: EN PISTE ROSIE
+DESCRIPTION: dans le cadre du Festival Culture Bar-Bars
+CONDITIONS: 
+"
+faiss_index_short,Un festival en été,5,0.8,55,0.4068,"TITRE: Festival du Merveilleux
+DESCRIPTION: Vivre le patrimoine
+CONDITIONS: 22 € - Adultes
+18 € - Jeunes (de 12 à 18 ans, étudiants – de 25 ans)
+14 € - Réduit (personnes en situation de handicap, accompagnant de personnes en situation de handicap) et enfants de 3 à 11 ans
+"
+faiss_index_short,Un festival en été,5,0.8,81,0.4376,"TITRE: SOLA
+DESCRIPTION: dans le cadre du Festival Culture Bar-Bars
+CONDITIONS: 
+"
+faiss_index_short,Un festival en été,5,0.8,86,0.4393,"TITRE: EN PISTE ROSIE
+DESCRIPTION: dans le cadre du Festival Culture Bar-Bars
+CONDITIONS: 
+"
+faiss_index_short,Un festival en été,5,0.8,83,0.4446,"TITRE: FLOR Y FANGO
+DESCRIPTION: dans le cadre du Festival Culture Bar-Bars
+CONDITIONS: 
+"
+faiss_index_short,Un festival en été,5,0.8,91,0.4446,"TITRE: FLOR Y FANGO
+DESCRIPTION: dans le cadre du Festival Culture Bar-Bars
+CONDITIONS: 
+"
+faiss_index_long,Un festival en été,4,0.8,55,0.3892,TITRE: Festival du Merveilleux
+faiss_index_long,Un festival en été,4,0.8,55,0.4219,"acrobaties et magie se mêlent pour recréer l’atmosphère festive et poétique des fêtes foraines d’autrefois. Le lieu devient un espace de transmission et d’émotion, où s’expriment les savoir-faire et l’imaginaire collectif liés à la culture foraine. En complément de cette programmation foisonnante, l"
+faiss_index_long,Un festival en été,4,0.8,55,0.423,"DESCRIPTION:  Le Festival du Merveilleux est l’occasion de (re)découvrir les Pavillons de Bercy – Musée des Arts Forains sous un nouveau jour. Chaque fin d’année, depuis 2009, ce musée-spectacle ouvre ses portes en continu, sans visite guidée, pour une dizaine de jours placés sous le signe de la fêt"
+faiss_index_long,Un festival en été,4,0.8,46,0.4297,"approfondir un langage commun. J’ai un souvenir marquant d’une mise en scène de Ludovic Lagarde, avec ce feu et cette urgence dramatique qui font tout l’intérêt de Lully : ces contrastes saisissants entre récitatifs en clair-obscur et explosions instrumentales et chorales. Ici, pas encore d’airs acc"
+faiss_index_long,Un festival en été,3,0.4,55,0.3892,TITRE: Festival du Merveilleux
+faiss_index_short,J'aimerais assister à un comedy club,7,0.6,9,0.5015,"TITRE: Tour de contes à la Grande Mosquée de Paris
+DESCRIPTION: La Cour des Contes
+CONDITIONS: réservation sur hello asso de la compagnie
+"
+faiss_index_short,J'aimerais assister à un comedy club,7,0.6,40,0.5015,"TITRE: Tour de contes à la Grande Mosquée de Paris
+DESCRIPTION: La Cour des Contes
+CONDITIONS: réservation sur hello asso de la compagnie
+"
+faiss_index_short,J'aimerais assister à un comedy club,7,0.6,39,0.5092,"TITRE: Le plaisir, la peur et le triomphe
+DESCRIPTION: Club Tendre - Joaquim Fossi
+CONDITIONS: Entrées payantes
+"
+faiss_index_short,J'aimerais assister à un comedy club,7,0.6,92,0.5161,"TITRE: LA LOGE
+DESCRIPTION: dans le cadre du Festival Culture Bar-Bars
+CONDITIONS: 
+"
+faiss_index_short,J'aimerais assister à un comedy club,7,0.6,98,0.5194,"TITRE: LE PRINCE DU BIZARRE
+DESCRIPTION: dans le cadre du Festival Culture Bar-Bars
+CONDITIONS: 
+"
+faiss_index_short,J'aimerais assister à un comedy club,7,0.6,81,0.5255,"TITRE: SOLA
+DESCRIPTION: dans le cadre du Festival Culture Bar-Bars
+CONDITIONS: 
+"
+faiss_index_short,J'aimerais assister à un comedy club,7,0.6,80,0.5258,"TITRE: Tèmpi Tèmtoa
+DESCRIPTION: Cie Productions Anecdotiques/Barbara Glet & Louis Galliot
+CONDITIONS: 14€ adulte, 7€ pour les moins de 30 ans
+"
+faiss_index_long,J'aimerais assister à un comedy club,6,0.7,57,0.5021,"https://youtu.be/ZfP8uftJ1hQ  
+CONDITIONS: Prix billetterie et lunettes connectées gratuite sur réservation."
+faiss_index_long,J'aimerais assister à un comedy club,6,0.7,33,0.5141,"Ecrit par Yeelem Jappin et Julie Roux 
+CONDITIONS: Entrée libre sur réservation"
+faiss_index_long,J'aimerais assister à un comedy club,6,0.7,6,0.5223,"Il s’agit d’une forme de création volontairement courte, rapide, incomplète, construite en quelques heures, en tentant d’utiliser au maximum les récits du jour. Pour dire, entre autres choses, que les théâtres peuvent accueillir ça aussi, la possibilité de venir parler, se faire écrire quelque chose"
+faiss_index_long,J'aimerais assister à un comedy club,6,0.7,79,0.5257,"Avec ce spectacle la compagnie A. poursuit sa réflexion sur les ""grands récits"" qui orientent nos sociétés et nos imaginaires, sur une scène pensée comme un laboratoire. En interrogeant le réel tel qu’il se dessine en ligne et en dévoilant les stratégies de l’extrême-droite pour imposer ses idées le"
+faiss_index_long,J'aimerais assister à un comedy club,6,0.7,56,0.5308,"Cette entrée au Répertoire est celle d’une œuvre incomprise en son temps, que l’on redécouvre en écho à nos préoccupations sociétales. Clément Hervieu-Léger, nouvel administrateur général de la Comédie-Française, a été séduit par la modernité de cette pièce sur la danse – discipline de ses débuts do"
+faiss_index_long,J'aimerais assister à un comedy club,6,0.7,54,0.5391,"de ce récent sondage qui affirme qu'une majorité de français serait pour le retour d'un ""Napoléon"" au pouvoir ! Incroyable synchronicité...  Avec Éric Delcourt, Salomé Granelli, Boubacar Kabo et Solay.   Une comédie écrite par Éric Delcourt et Tony Zannier, mise en scène par Romain Thunin"
