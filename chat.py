@@ -1,4 +1,6 @@
+# =======================
 # Librairies nécessaires
+# =======================
 from rag.connexion_llm import generate_LLM
 
 # Transformation de la question en vecteurs

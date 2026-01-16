@@ -20,7 +20,6 @@ from rag.preprocessing import (
 from rag.embeddings import generation_embeddings, generation_embeddings_short
 from rag.vectorstore import build_vectorstore
 from rag.similarity_test import cos_test
-from rag.evaluation import query_test
 
 # =====================================
 # Définition minimale de notre logging
@@ -86,7 +85,8 @@ def main():
         documents_short,
         embeddings,
         "faiss_index_short"
-    )    
+    )
+
     # ==================
     # Tests de similarité
     # ==================

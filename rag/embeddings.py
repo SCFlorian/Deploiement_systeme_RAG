@@ -1,7 +1,8 @@
+# =======================
+# Librairies nécessaires
+# =======================
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
-
-
 # ======================
 # VERSION LONGUE (chunk)
 # ======================
@@ -26,10 +27,7 @@ def generation_embeddings(df_long):
             for i in range(len(texts))
         ]
     )
-
     return documents
-
-
 # ======================
 # VERSION COURTE (1 doc)
 # ======================
@@ -42,6 +40,7 @@ def generation_embeddings_short(df_short):
                 page_content=row["text_for_embedding"],
                 metadata={
                     "doc_id": i,
+                    "Date de début": row["firstdate_begin"],
                     "Date de fin": row["lastdate_end"],
                     "Lieu": row["location_name"],
                     "Adresse postale": row["location_address"],

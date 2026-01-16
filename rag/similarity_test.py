@@ -1,4 +1,6 @@
+# =======================
 # Librairies nécessaires
+# =======================
 import numpy as np
 # ===================================
 # Test de similarité avec le cosinus

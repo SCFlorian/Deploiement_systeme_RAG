@@ -28,3 +28,4 @@ app copy.py
 notebook/.DS_Store
 faiss_index_long/
 faiss_index_short/
+api_test.py
