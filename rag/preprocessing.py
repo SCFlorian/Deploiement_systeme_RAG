@@ -50,7 +50,7 @@ def col_rename(df_firstclean):
     "longdescription_fr":"longdescription",
     "conditions_fr":"conditions",
     "keywords_fr":"keywords",
-    "daterange_fr":"daterange_fr"
+    "daterange_fr":"daterange"
     })
     # Création de nos deux dataframe
     df_short = df_firstclean_new.copy()
@@ -67,8 +67,10 @@ def short_version(df_short):
     df_short["text_for_embedding"] = (
         "TITRE: " + df_short["title"] + "\n" +
         "DESCRIPTION: " + df_short["description"].fillna("") + "\n" +
-        "CONDITIONS: " + df_short["conditions"].fillna("") + "\n")
-
+        "CONDITIONS: " + df_short["conditions"].fillna("") + "\n" +
+        "LIEU :" + df_short["location_name"].fillna("") + "\n" +
+        "DATE :" + df_short["daterange"].fillna("") + "\n")
+    
     return df_short
 
 # Version longue
@@ -79,6 +81,8 @@ def long_version(df_long):
     df_long["text_for_embedding"] = (
         "TITRE: " + df_long["title"] + "\n" +
         "DESCRIPTION: " + df_long["longdescription"].fillna("") + "\n" +
-        "CONDITIONS: " + df_long["conditions"].fillna("") + "\n")
+        "CONDITIONS: " + df_long["conditions"].fillna("") + "\n"
+        "LIEU :" + df_long["location_name"].fillna("") + "\n" +
+        "DATE :" + df_long["daterange"].fillna("") + "\n")
 
     return df_long

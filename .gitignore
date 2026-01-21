@@ -21,7 +21,6 @@ poetry.lock
 # On peut ignorer pour le moment
 __pycache__
 faiss_index
-tests
 .DS_Store
 faiss_index.idx
 app copy.py
@@ -29,3 +28,5 @@ notebook/.DS_Store
 faiss_index_long/
 faiss_index_short/
 api_test.py
+df_pour_questions.csv
+.pytest_cache

@@ -3,6 +3,8 @@
 # =======================
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
+from langchain_mistralai.embeddings import MistralAIEmbeddings
+import os
 # ======================
 # VERSION LONGUE (chunk)
 # ======================
@@ -50,3 +52,10 @@ def generation_embeddings_short(df_short):
         )
 
     return documents
+
+
+def create_embeddings():
+    embeddings = MistralAIEmbeddings(
+            api_key=os.getenv("MISTRAL_KEY")
+        )
+    return embeddings
