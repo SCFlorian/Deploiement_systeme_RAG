@@ -38,7 +38,7 @@ pd.set_option('display.max_colwidth', None)
 # ========================================
 # Récupération du ficher CSV d'évaluation
 # ======================================== 
-df_ragas = pd.read_csv("data/new_resultat_evaluation.csv")
+df_ragas = pd.read_csv("data/resultat_evaluation.csv")
 logging.info(df_ragas.head())
 
 # Modification de la colonne 'contexts' pour qu'elle soit compréhensible pour le format dataset

@@ -2,7 +2,7 @@
 # EVALUATION DE NOS QUESTIONS POSÉES À NOTRE SYSTÈME
 # ===================================================
 # ======================
-# Librairies nécessaires
+# Libraires nécessaires
 # ======================
 import csv
 import logging
