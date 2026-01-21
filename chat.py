@@ -10,10 +10,15 @@ from rag.connexion_llm import generate_LLM
 # Définition du prompt
 # Mise en place de chaîne langchain avec LCEL(create_stuff_documents_chain) avec comme helper create_rerieval_chain
 
-rag_chain = generate_LLM("faiss_index_short")
+def answer_chat(question):
+    rag_chain = generate_LLM("faiss_index_short")
 
-response = rag_chain.invoke({
-    "input": "J'aimrais aller voir une pièce de théâtre, que peux-tu me conseiller ?"
-})
+    response = rag_chain.invoke({
+        "input": question
+    })
 
-print(response["answer"])
+    return response["answer"]
+
+question = "Quels sont les concerts en 2026 ?"
+answer = answer_chat(question)
+print(answer)

@@ -1,8 +1,8 @@
 # ===================================================
-# EVALUATION DE NOS QUESTIONS POSÉES à NOTRE SYSTÈME
+# EVALUATION DE NOS QUESTIONS POSÉES À NOTRE SYSTÈME
 # ===================================================
 # ======================
-# Libraires nécessaires
+# Librairies nécessaires
 # ======================
 import csv
 import logging
@@ -42,13 +42,13 @@ questions_reponses = [
     {"b":"Question 4 :","q": "De quoi parle l'exposition 'Soulages, une autre lumière' ?","a": "Elle présente l'œuvre sur papier de Pierre Soulages."},
     {"b":"Question 5 :","q": "Y a-t-il un événement de recrutement pour la SNCF ?","a": "Oui, il y a une présentation du métier de Conducteur de Trains le 9 février 2026."},
     {"b":"Question 6 :","q": "Quel compositeur est joué par Les Talens Lyriques dans 'Ascanio in Alba' ?","a": "C'est une œuvre de Mozart."},
+    {"b":"Question 7 :","q": "Est-ce que Naïssam Jalal va lancer quelque chose prochainement ?", "a": "Naïssam Jalal va créer un laboratoire d’expérimentation autour de son répertoire 'Landscapes of Eternity', dont l’album paraîtra en avril 2026.."},
     # --- Groupe B : Recommendation et Synthèse (Réponse basée sur plusieurs docs) ---
-    {"b":"Question 7 :","q": "Quels spectacles peut-on voir en mars 2026 ?","a": "En mars 2026, il y a 'Kohlhaas', 'Moi, Elles', 'Ascanio in Alba', 'Maison de Poupée' et 'Le Balcon'."},
-    {"b":"Question 8 :","q": "Je cherche un spectacle lyrique ou un opéra. Que proposes-tu ?","a": "Tu peux voir 'Ascanio in Alba' (Mozart) ou 'L'homme qui aimait les chiens' (opéra de chambre)."},
-    {"b":"Question 9 :","q": "Y a-t-il des événements gratuits ou sur inscription ?","a": "Oui, 'Kohlhaas' est sur réservation (experts DRAC) et 'Moi, Elles' est sur inscription."},
-    {"b":"Question 10 :","q": "Quels sont les concerts de musique classique disponibles ?","a": "Il y a les concerts des 'Talens Lyriques', 'Le Balcon' (récital Contes) et 'Les Cris de Paris'."},
-    {"b":"Question 11 :","q": "Y a-t-il des spectacles de marionnettes ou visuels ?","a": "Oui, 'Maison de Poupée' par Plexus Polaire (Yngvild Aspeli) semble correspondre."},
-    {"b":"Question 12 :","q": "Donne-moi une idée de sortie culturelle pour février 2026.","a": "En février, il y a l'opéra 'L'homme qui aimait les chiens' (Court-Circuit)."},
+    {"b":"Question 8 :","q": "Quels sont les spectacles du cycle Court-Circuit ?", "a": "Le cycle propose l'opéra 'L'homme qui aimait les chiens' et le spectacle 'Yokai Matsuri'."},
+    {"b":"Question 9 :","q": "Quelles pièces de théâtre de Molière sont disponibles ?", "a": "Il y a 3 pièces de Molière : 'Les Femmes Savantes', 'Les Fourberies de Scapin' et 'Le Misanthrope'."},
+    {"b":"Question 10 :","q": "Quels sont les trois spectacles dont le titre contient le mot 'Danse' ?", "a": "Les spectacles sont : Ensemble 2E2M : Danses en-jeu(x), Danser (l'exposition à la Cité des sciences) et L'École de Danse (de Carlo Goldoni)."},
+    {"b":"Question 11 :","q": "Quels sont les spectacles programmés au Théâtre des Bouffes du Nord ?","a": "Il y en a trois : Lettres non-écrites, La Mouche et Karaoké."},
+    {"b":"Question 12 :","q": "Quelles pièces sont jouées à la Comédie-Française ?","a": "Les pièces sont : Les Fourberies de Scapin (Molière), Une Mouette (Tchekhov), L'École de Danse (Goldoni) et Le Misanthrope (Molière)."},
     # --- Groupe C : Hors corpus (Doit répondre qu'il ne sait pas / Hallucination Check) ---
     {"b":"Question 13 :","q": "Y a-t-il un concert de Beyoncé prévu ?","a": "Je ne trouve aucune information sur un concert de Beyoncé dans les événements."},
     {"b":"Question 14 :","q": "Quel est le programme du Festival d'Avignon 2026 ?","a": "Je ne dispose que des événements culturels à Paris (ou dans la base fournie), pas ceux d'Avignon."},
@@ -90,8 +90,7 @@ def main():
                 "Réponse LLM", 
                 "Score Qualité (LLM)", 
                 "Documents & Scores Distance (Pour le Seuil)",
-                "Lieux tiré des métadonnées",
-                "Date de début tiré des métadonnées",
+                "Context tiré des métadonnées",
                 "Seuil utilisé min",
                 "Nombre de documents utilisés max",
                 "Eval Humaine"
@@ -113,18 +112,24 @@ def main():
 
             # On garde seulement si le score est plus grand que le seuil
             docs_et_scores = [(d, s) for d, s in raw_results if s >= SEUIL_RAG]
-
+            import json
             # Formatage pour le CSV
             if not docs_et_scores:
                 sources_str = "Aucun document (Filtré par le seuil)"
                 place_str = ""
-                date_begin_str = ""
+                context_str = ""
             else:
                 # 's' est maintenant un score de pertinence (ex: 0.74), pas une distance
                 sources_str = " | ".join([f"Doc {d.metadata.get('doc_id')} (Score: {round(s, 3)})" for d, s in docs_et_scores])
-                place_str = " | ".join([f"{d.metadata.get('Lieu')}" for d, s in docs_et_scores])
-                date_begin_str = " | ".join([f"{d.metadata.get('Date de début')}" for d, s in docs_et_scores])
-
+                context_str = json.dumps([{
+                    "doc_id": d.metadata.get("doc_id"),
+                    "contenu": d.page_content,
+                    "Date de début": d.metadata.get("Date de début"),
+                    "Date de fin": d.metadata.get("Date de fin"),
+                    "lieu": d.metadata.get("Lieu"),
+                    "Adresse postale": d.metadata.get("Adresse postale")} for d, s in docs_et_scores],
+                    ensure_ascii=False)
+                
             # Interroger le LLM
             response = rag_chain.invoke({"input": q})
             reponse_llm = response["answer"]
@@ -143,8 +148,7 @@ def main():
                 reponse_llm, 
                 round(score_qualite, 4), 
                 sources_str,
-                place_str,
-                date_begin_str,
+                context_str,
                 SEUIL_RAG,
                 k,
                 ""

@@ -17,7 +17,7 @@ from rag.preprocessing import (
     short_version,
     long_version
 )
-from rag.embeddings import generation_embeddings, generation_embeddings_short
+from rag.embeddings import generation_embeddings, generation_embeddings_short, create_embeddings
 from rag.vectorstore import build_vectorstore
 from rag.similarity_test import cos_test
 
@@ -32,7 +32,7 @@ logging.basicConfig(
 load_dotenv()
 
 
-def main():
+def data_update():
     # ===========================
     # Extraction & preprocessing
     # ===========================
@@ -64,11 +64,9 @@ def main():
     documents_short = generation_embeddings_short(df_short)
 
     # ===================
-    # Embeddings (UN SEUL)
+    # Embeddings
     # ===================
-    embeddings = MistralAIEmbeddings(
-        api_key=os.getenv("MISTRAL_KEY")
-    )
+    embeddings = create_embeddings()
 
     # ==================
     # Vectorstores FAISS
@@ -100,4 +98,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    data_update()
