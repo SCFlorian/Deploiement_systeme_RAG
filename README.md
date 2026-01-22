@@ -67,22 +67,22 @@ L'actualisation des données pourra se faire en local ou via un bouton "/rebuild
 ## Installation et utilisation
 ### Avant un lancement
 1. Créez un fichier .env à la racine du projet et ajoutez votre clé API (sans guillemets) :
-	1. Vous pouvez remettre les paramatres de l'exemple mais surtout il faut ajouter **votre clé API Mistral** :
+	1. Vous pouvez remettre les paramètres de l'exemple mais surtout il faut ajouter **votre clé API Mistral** :
 ```
 MISTRAL_KEY=***
 SEUIL_RAG=0.65
-k=4
+k=3
 ```
-2. Exécuter le script **scripts/build_index.py** afin de construire vos bases FAISS
+2. Exécutez le script **scripts/build_index.py** afin de construire vos bases FAISS
 
 
 ### Installation sans Docker
-1. Cloner le projet :
+1. Clonez le projet :
 ```
 git clone git@github.com:SCFlorian/Deploiement_systeme_RAG.git
 cd Deploiement_systeme_RAG
 ```
-2. Installer les dépendances : Le projet utilise pyproject.toml pour la gestion des dépendances :
+2. Installez les dépendances : Le projet utilise pyproject.toml pour la gestion des dépendances :
 ```
 poetry install --no-root
 ```
@@ -148,6 +148,6 @@ Réalisation de deux types d'évaluation :
 - Résultats : En combinant les 2 évaluations (voir notebook_evaluation_ragas.ipynb), on voit que les meilleurs paramètres sont :
 	- k=3 et seuil à 0.65
 	- k=3 et seuil à 0.50
-- On retient pour le moement la deuxième porposition car les résultats sont un au dessus lorsque l'on prend uniquement des questions factuelles.
+- On retient pour le moment la deuxième proposition car les résultats sont meilleurs lorsque l'on prend uniquement des questions factuelles.
 - Et nous prenons la base de FAISS version courte (version sans chunk) car cela va nous permettre de générer moins de token dans un premier temps et les réponses sont pour le moment en adéquation avec ce que l'on recherche pour ce POC.
 
