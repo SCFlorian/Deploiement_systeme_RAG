@@ -9,8 +9,8 @@ from pydantic import BaseModel
 import uvicorn
 # Imports nécessaires
 # ====================
-from chat import answer_chat
-from build_index import data_update
+from scripts.chat import answer_chat
+from scripts.build_index import data_update
 
 # ========================
 # Activation de notre API
