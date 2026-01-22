@@ -8,13 +8,13 @@ import sys, os
 # Ajout du chemin pour trouver build_index.py
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # Imports nécessaires
-from build_index import (
+from scripts.build_index import (
+    prepare_dataframe,
     del_col_business_side,
     del_col_missed_val,
     col_rename,
     short_version,
     long_version)
-from build_index import prepare_dataframe
 
 # Test de la préparation des documents
 def test_preprocessing_pipeline_output_consistency():
