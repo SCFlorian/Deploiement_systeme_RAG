@@ -29,6 +29,9 @@ RUN poetry install --no-interaction --no-ansi --no-root
 # Copie du reste du code source
 COPY . .
 
+# Lancement des tests à la création de l'image Docker
+RUN pytest tests/test_preprocessing.py tests/test_data_loader.py
+
 # Port exposé
 EXPOSE 7860
 

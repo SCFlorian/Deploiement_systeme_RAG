@@ -30,3 +30,4 @@ faiss_index_short/
 api_test.py
 df_pour_questions.csv
 .pytest_cache
+.coverage
