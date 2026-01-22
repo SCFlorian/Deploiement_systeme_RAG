@@ -29,7 +29,7 @@ RUN poetry install --no-interaction --no-ansi --no-root
 # Copie du reste du code source
 COPY . .
 
-# Lancement des tests à la création de l'image Docker
+# Lancement des tests à la création de l'image Docker (hors test_indexation_retrieval.py car présence env nécessaire)
 RUN pytest tests/test_preprocessing.py tests/test_data_loader.py
 
 # Port exposé

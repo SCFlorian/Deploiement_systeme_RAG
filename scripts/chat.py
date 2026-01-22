@@ -1,6 +1,9 @@
 # =======================
 # Librairies nécessaires
 # =======================
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from rag.connexion_llm import generate_LLM
 
 # Transformation de la question en vecteurs

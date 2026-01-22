@@ -12,7 +12,7 @@ import sys, os
 # Ajout du chemin pour trouver build_index.py
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # Imports nécessaires
-from build_index import prepare_dataframe
+from scripts.build_index import prepare_dataframe
 
 def test_prepare_dataframe_structure():
     """
