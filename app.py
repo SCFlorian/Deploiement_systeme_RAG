@@ -3,7 +3,9 @@
 # =============================
 # Librairies nécessaires
 # =======================
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
+from fastapi.responses import JSONResponse
+from fastapi.exceptions import RequestValidationError
 import os
 from pydantic import BaseModel
 import uvicorn
@@ -22,6 +24,19 @@ app = FastAPI(title="Puls-Events - POC Chatbot intelligent")
 class Question(BaseModel):
     question: str
 
+# Gestion de l'erreur 404 (Route inexistante)
+# ============================================
+@app.exception_handler(404)
+async def custom_404_handler(request: Request, exc):
+    return JSONResponse(
+        status_code=404,
+        content={
+            "error_code": 404,
+            "message": "Cette route n'existe pas.",
+            "detail": f"L'URL '{request.url.path}' est inconnue.",
+            "suggestion": "Essayez plutôt /ask ou /rebuild ou encore /health"
+        }
+    )
 # Routes simples
 # =========================
 @app.get("/health")
@@ -34,7 +49,7 @@ def health_check():
 @app.post("/ask")
 def speak_to_chatbot(data: Question):
     try:
-        question = "Y a-t-il un événement de recrutement pour la SNCF ? N'hésite pas à développer"
+        question = "Je cherche une pièce de théâtre en 2026"
         answer = answer_chat(data.question)
         return {
             "answer": answer
