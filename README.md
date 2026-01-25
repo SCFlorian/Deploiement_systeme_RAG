@@ -62,6 +62,7 @@ L'actualisation des données pourra se faire en local ou via un bouton "/rebuild
 ├── poetry.lock                             # Pas versionné sur Git
 ├── pyproject.toml                          # Gestion des dépendances Poetry
 ├── README.md                               # Documentation du projet
+├── rapport_technique.pdf                   # Rapport technique du projet
 ```
 
 ## Installation et utilisation
