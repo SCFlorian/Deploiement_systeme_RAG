@@ -149,6 +149,6 @@ Réalisation de deux types d'évaluation :
 - Résultats : En combinant les 2 évaluations (voir notebook_evaluation_ragas.ipynb), on voit que les meilleurs paramètres sont :
 	- k=3 et seuil à 0.65
 	- k=3 et seuil à 0.50
-- On retient pour le moment la deuxième proposition car les résultats sont meilleurs lorsque l'on prend uniquement des questions factuelles.
+- On retient pour le moment la première proposition.
 - Et nous prenons la base de FAISS version courte (version sans chunk) car cela va nous permettre de générer moins de token dans un premier temps et les réponses sont pour le moment en adéquation avec ce que l'on recherche pour ce POC.
 
