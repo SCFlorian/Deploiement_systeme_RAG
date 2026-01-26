@@ -147,7 +147,7 @@ Pour tester l'API et sauvegarder vos requêtes, vous pouvez utiliser Postman :
 
 3. **Lancer :**
    - Cliquez sur **Send**.
-   - La réponse du chatbot (texte + sources) apparaîtra en bas dans la fenêtre de réponse.
+   - La réponse du chatbot apparaîtra en bas dans la fenêtre de réponse.
 
 *Note : Vous pouvez procéder de la même manière pour l'endpoint `/rebuild` (Méthode POST) afin de mettre à jour les données.*
 
