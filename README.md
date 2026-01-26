@@ -126,6 +126,31 @@ http://localhost:7860/docs
 	- **/rebuild**	Télécharge les données et construit l'index vectoriel. À lancer au premier démarrage.
 	- **/ask**	Pose une question au chatbot.
 
+### Utilisation avec Postman (Alternative)
+Pour tester l'API et sauvegarder vos requêtes, vous pouvez utiliser Postman :
+
+1. **Configurez la requête :**
+   - Créez une nouvelle requête.
+   - Choisissez la méthode **POST**.
+   - Entrez l'URL : `http://localhost:7860/ask`
+
+2. **Ajouter le contenu (Body) :**
+   - Allez dans l'onglet **Body**.
+   - Sélectionnez **raw**.
+   - Dans le menu déroulant à droite (souvent sur "Text"), choisissez **JSON**.
+   - Collez votre question au format JSON :
+     ```json
+     {
+       "question": "Quels sont les concerts de Jazz ce week-end ?"
+     }
+     ```
+
+3. **Lancer :**
+   - Cliquez sur **Send**.
+   - La réponse du chatbot (texte + sources) apparaîtra en bas dans la fenêtre de réponse.
+
+*Note : Vous pouvez procéder de la même manière pour l'endpoint `/rebuild` (Méthode POST) afin de mettre à jour les données.*
+
 ## Qualité et Tests
 La stratégie de test adoptée pour ce POC repose sur deux piliers :
 - Tests unitaires au build :
